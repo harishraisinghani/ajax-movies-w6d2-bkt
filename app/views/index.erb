@@ -1,0 +1,19 @@
+<h1>Movies Homepage</h1>
+
+<section id="movie-list">
+
+	<% @movies.each do |movie| %>
+		<section class="row">
+			<div class="col-xs-3">
+				<img class="img-responsive" src="<%= movie.poster_src %>">
+			</div>
+			<div class="col-xs-9">
+				<h1><a href="/movies/<%= movie.id%>"><%= movie.name %></a></h1>
+				<p><%= movie.year %></p>
+			</div>
+		</section>
+	<% end %>
+
+</section>
+
+2015-01-15 18:30:35 GMT-800

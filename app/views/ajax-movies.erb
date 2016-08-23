@@ -1,0 +1,84 @@
+<h1>Movies!</h1>
+
+
+<div class="controls">
+  <button class="load-movies btn btn-info">
+   Load Movies
+  </button>
+  <button class="add-movie btn btn-info">
+    Add Movie
+  </button>
+</div>
+
+<div class="spinner">
+  <img src="/images/reload.gif" height="20" width="20" />
+  <span class="spinner__text">Loading...</span>
+</div>
+
+<form class="add-movie">
+  <input type="text" name="name" id="name" placeholder="name" />
+  <input type="text" name="year" id="year" placeholder="year" />
+  <input type="text" name="poster_src" id="poster_src" placeholder="poster_src" />
+  <textarea name="description" id="description" placeholder="description"> </textarea>
+  <input type="text" name="running_time" id="running_time" placeholder="running_time" />
+  <button class="add-movie" type="submit">Add Movie</button>
+</form>
+
+
+<!-- 
+section.movies>section.row.movie>((.col-xs-3>img[src=""])+.col-xs-9>(.name+div>(span.year+span.running_time))) -->
+
+<section class="movies">
+  <section class="row movie dummy" data-id="">
+    <div class="col-xs-3">
+      <img  class="poster_src" 
+            src="" alt="">
+    </div>
+    <div class="col-xs-9">
+      <div class="name"></div>
+      <div>
+        <span class="year"></span>
+        <span class="running_time"></span>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="movies">
+  <section class="movie dummy">
+    <div class="row">
+      <div class="col-xs-3"><img src="" alt="" class="poster_src"></div>
+      <div class="col-xs-4">
+        <p class="name"></p>
+      </div>
+      <div class="col-xs-5"><span class="year"></span><span class="running_time"></span></div>
+    </div>
+  </section>
+</section> -->

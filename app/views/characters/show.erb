@@ -1,0 +1,8 @@
+<h1><%= @character.name %></h1>
+<h2>From <%= @movie.name %></h2>
+
+<p>
+He's a <%= @character.gender=='M' ? 'boy' : 'girl' %> 
+that <%= @character.dies_in_movie==true ? 'dies' : 'stays alive' %>.
+</p>
+<img src="<%= @character.img_src %>" >

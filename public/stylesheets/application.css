@@ -1,0 +1,35 @@
+nav a{
+	color: #A2C7F5;
+}
+
+@media only screen and (min-width: 768px)
+.intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+    padding: 100px 0 50px;
+}
+
+.dummy{
+  display: none;
+}
+
+.spinner{
+  display: none;
+}
+.spinner__text{
+  color: #2fc296;
+}
+
+.movie img{
+  width: 100%;
+  height: auto;
+}
+
+form.add-movie{
+  display: none;
+}
+
+form.add-movie input,
+form.add-movie textarea
+{
+  display: block;
+  width: 100%;
+}

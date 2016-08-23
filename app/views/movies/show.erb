@@ -1,0 +1,15 @@
+<h1><%= @movie.name %></h1>
+
+<p><%= "Filmed in: #{@movie.year}" %></p>
+
+<p>This movie has characters:</p>
+<ul>
+	<% @characters.each do |character| %>
+		<li>
+			<a href="/movies/<%= @movie.id %>/characters/<%= character.id %>"><%= character.name %></a> is a 
+			<%= character.gender=='M' ? "male" : "female"  %>
+		</li>
+	<% end %>
+</ul>
+
+<p><a href="/movies/<%= @movie.id %>/characters/new">Submit a character</a> for <%= @movie.name %></p>
