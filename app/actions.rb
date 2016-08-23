@@ -93,20 +93,6 @@ end
 
 post '/api/movie' do
   # binding.pry
-  # set params 
-  name = params[:name]
-  year = params[:year]
-  poster_src = params[:poster_src]
-
-  # create new movie
-  movie = Movie.new(name: name, year: year, poster_src: poster_src)
-
-  # try to save & send success message back
-  if false && movie.save
-    return {success: true, id: movie.id}.to_json
-  else
-    return {success: false}.to_json
-  end
 end
 
 
